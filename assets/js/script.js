@@ -19,10 +19,17 @@ contactForm.addEventListener('submit', function (event) {
 
     // Envoyer le formulaire après un court délai (pour simuler l'envoi)
     setTimeout(function () {
+        
         // Envoyer le formulaire
-        contactForm.submit();
+        if (contactForm.submit()) {
+            // Afficher le message d'erreur après l'envoi (à titre de démonstration)
+            formGroup.style.display = 'block';
+        } else {
+            // N'afficher pas le message d'erreur après si l'envoi n'est toujours en cours
+            formGroup.style.display = 'none';
+        }
+        
 
-        // Afficher le message d'erreur après l'envoi (à titre de démonstration)
-        formGroup.style.display = 'block';
+        
     }, 1500); // Vous pouvez ajuster le délai (en millisecondes) selon vos besoins
 });

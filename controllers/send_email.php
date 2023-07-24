@@ -42,14 +42,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['success'] = 'Le message a été envoyé avec succès !';
         } catch (Exception $e) {
             $_SESSION['error'] = 'Une erreur est survenue lors de l\'envoi de l\'e-mail : ' . $mail->ErrorInfo . '';
-            header('location: ../');
         }
 
     } else {
         $_SESSION['error'] = 'Remplissez tous les champs !';
-        header('location: ../');
     }
 
-    //header('location: ../');
+    header('location: ../');
 }
 ?>
