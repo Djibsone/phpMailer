@@ -23,14 +23,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'crackedtamou@gmail.com'; // Remplacez par votre adresse e-mail
-            $mail->Password   = 'crnqwyhasvgzwpzp'; // Remplacez par votre mot de passe
+            $mail->Username   = 'votre_email@gmail.com'; // Remplacez par votre adresse e-mail
+            $mail->Password   = 'votre_mot_de_passe'; // Remplacez par votre mot de passe
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
             // Destinataire et expéditeur
             $mail->setFrom($email, $name);
-            $mail->addAddress('crackedtamou@gmail.com', 'Djibs'); // Remplacez par votre adresse e-mail
+            $mail->addAddress('votre_email@gmail.com', 'Djibs'); // Remplacez par votre adresse e-mail
 
             // Contenu de l'e-mail
             $mail->isHTML(true);
