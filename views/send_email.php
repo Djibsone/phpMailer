@@ -1,4 +1,4 @@
-<h1>Contactez-nous</h1>
+<h1 class="contact">Contactez-nous</h1>
 <div class="formGroup">
     <?php include './views/msg_error_success.php' ?>
 </div>
