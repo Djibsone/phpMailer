@@ -32,7 +32,7 @@ contactForm.addEventListener('submit', function (event) {
             // Afficher le message d'erreur après l'envoi (à titre de démonstration)
             formGroup.style.display = 'block';
 
-            // Afficher le spinner
+            // Cacher le spinner
             spinner.style.display = 'none';
         } else {
             // N'afficher pas le message d'erreur après si l'envoi est toujours en cours
