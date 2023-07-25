@@ -59,10 +59,32 @@ input[type="submit"]:hover {
     background-color: #0056b3;
 }
 
-#spinner {
+/* Spinner animate */
+@keyframes spin {
+    0% { transform: rotate(0deg); border-color: #ff0000; }
+    25% { border-color: #00ff00; }
+    50% { border-color: #0000ff; }
+    75% { border-color: #ff00ff; }
+    95% { border-color: #EEEEEE; }
+    100% { transform: rotate(360deg); border-color: #ff0000; }
+}
+
+.spinner {
     display: none;
 }
 
-#spinner img {
-    width: 800px;
+.spinner-container {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid transparent; /* Ajoutez une bordure pour créer un cercle non plein */
+    border-top-color: #ff0000; /* Couleur de la bordure, vous pouvez ajuster selon vos préférences */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
 }

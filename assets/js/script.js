@@ -1,7 +1,7 @@
 // Récupérer le formulaire et le spinner par leur identifiant
 const formGroup = document.querySelector('.formGroup');
 const contactForm = document.getElementById('contactForm');
-const spinner = document.getElementById('spinner');
+const spinner = document.querySelector('.spinner');
 
 // Ajouter un événement de soumission du formulaire
 contactForm.addEventListener('submit', function (event) {
@@ -24,12 +24,12 @@ contactForm.addEventListener('submit', function (event) {
         if (contactForm.submit()) {
             // Afficher le message d'erreur après l'envoi (à titre de démonstration)
             formGroup.style.display = 'block';
+
+            // Afficher le spinner
+            spinner.style.display = 'none';
         } else {
             // N'afficher pas le message d'erreur après si l'envoi n'est toujours en cours
             formGroup.style.display = 'none';
-        }
-        
-
-        
+        }  
     }, 1500); // Vous pouvez ajuster le délai (en millisecondes) selon vos besoins
 });

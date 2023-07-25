@@ -12,8 +12,7 @@
     <input type="submit" value="Envoyer">
 </form>
 
- <!-- Spinner (icône de chargement) -->
- <div id="spinner">
-    <img src="https://icon-library.com/images/loading-icon-animated-gif/loading-icon-animated-gif-19.jpg" alt="Spinner">
-    <!-- <img src="https://thumbs.gfycat.com/CornyVariableIcterinewarbler-size_restricted.gif" alt="Spinner"> -->
+<!-- Cercle animé avec des couleurs changeantes -->
+<div class="spinner-container">
+    <div class="spinner"></div>
 </div>
